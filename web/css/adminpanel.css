@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:700');
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* AVTORIZATION FORM */
+
+.avtorization   {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+form {
+    border: 3px solid #76BBD8;
+}
+
+.loginput {
+    width: 100%;
+    height: 45px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.logbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.logbtn:hover{
+    background-color: #438648;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.containerin {
+    width: 100%;
+    padding: 16px;
+}
+
+/**********************************************************************************************/
+
+/* LEFT PART */
+
+.leftpart{
+    min-height: 1000px;
+    background-color: #202020;
+    background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+    padding-right: 0;
+}
+
+.leftpart h1{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #CCCACB;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.leftpart h2{
+    display: block;
+    float: right;
+    margin-right: 25px;
+    margin-top: 50px;
+    font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+    color: #767877;
+    font-size: 25px;
+}
+
+.name{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.leftpart ul{
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+.leftpart ul li a{
+    display: inline-block;
+    background: #459301;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    min-width: 250px;
+}
+
+.leftpart ul li a.active{
+    background: #F4F4F4;
+    color: #000;
+}
+
+.leftpart ul li a:hover:not(.active){
+    background: #59BC00;
+    color: #FFF;
+}
+
+.optbtn{
+    float: right;
+    margin: 0 25px;
+    margin-top: 10px;
+}
+
+.optbtn a{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    min-height: 25px;
+    display: inline-block;
+    padding-bottom: 3px;
+    color: #CCCACB;
+    outline: none;
+}
+
+.optbtn a:hover {
+    color: #CCCACB;
+    border-bottom: 2px solid orange;
+}
+
+.optbtn a:focus{
+    color: #CCCACB;
+}
+
+.optbtn a:active{
+    color: #CCCACB;
+}
+
+.ofs{
+    margin-right: 10px;
+}
+
+/**********************************************************************************************/
+
+/* RIGHT PART */
+
+.rightpart{
+    background: #F4F4F4;
+}
+
+.rightpart h2{
+    font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.rightpart h3{
+    font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.rightpart form {
+    border: none;
+}
+/**********************************************************************************************/
+
+/* MAIN */
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+a:focus{
+    color: #000;
+    text-decoration: none;
+}
+
+.block{
+    margin-top: 100px;
+    margin-right: 2%;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #CCCCCC;
+    border-radius: 15px;
+
+}
+.block:hover{
+    -webkit-box-shadow: 0 0 5px 0 #59BC00;
+    -moz-box-shadow:    0 0 5px 0 #59BC00;
+    box-shadow:         0 0 5px 0 #59BC00;
+}
+
+.block p{
+    font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.addgame{
+    background: url('../../web/img/admin/game.png') no-repeat;
+    background-position: 50% 10%;
+}
+
+.role{
+    background: url('../../web/img/admin/role.png') no-repeat;
+    background-position: 50% 10%;
+}
+
+.support{
+    background: url('../../web/img/admin/support.png') no-repeat;
+    background-position: 50% 10%;
+}
+.urlmanag{
+    background: url('../../web/img/admin/link.png') no-repeat;
+    background-position: 50% 10%;
+}
+
+.wrap{
+    text-align: center;
+}
+
+.h3main{
+    padding-top: 10px;
+}
+
+/**********************************************************************************************/
+
+/* INDEX */
+
+.games-index, .users-index, .contact-index, .sef-index{
+    margin-top: 50px;
+}
+
+.games-index .btn, .users-index .btn, .sef-index .btn{
+    margin-bottom: 25px;
+}
+
+.games-index table, .users-index table, .sef-index table{
+    margin-top: 5px;
+}
+
+.games-index table thead, .users-index table thead, .contact-index table thead,
+.sef-index table thead {
+    font-weight: bold;
+}
+
+/**********************************************************************************************/
+
+/* CREATE/UPDATE */
+
+.war{
+    color: maroon;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.games-form label, .users-create label, .sef-form label{
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+.games-form select{
+    min-height: 150px;
+}
+
+.games-form select.ddl{
+    min-height: 25px;
+    width: 100%;
+}
+/**********************************************************************************************/
+
+
+/* VIEW */
+
+.users-view table, .contact-view table, .sef-view table{
+    margin: 30px 0;
+}
+
+.games-view table{
+    margin: 30px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid grey;
+}
+
+.games-view table th{
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 12px 12px;
+}
+
+.games-view table td{
+    border: 1px solid #ddd;
+    padding: 12px 12px;
+}
+
+.games-view table td p{
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.games-view table tr:nth-child(even){
+    background: #FFF;
+}
+
+.os{
+    text-align: center;
+    color: maroon;
+    font-size: 20px;
+}
+
+.mailanswer{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    display: block;
+    float: right;
+    width: 150px;
+    height: 30px;
+    background: url('../../web/img/admin/mailto.png')no-repeat center right;
+    outline: none;
+}
+
+.mailanswer:hover{
+    color: #F2552C;
+    background: url('../../web/img/admin/mailtohover.png')no-repeat center right;
+}
+
+/**********************************************************************************************/
+
+/* OTHER */
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hmain {
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin: 25px 0;
+    font-weight: bold;
+    font-size: 35px;
+    color: #459301;
+}
+
+.contact-index .hmain {
+    margin-bottom: 50px;
+}
+
+/**********************************************************************************************/
